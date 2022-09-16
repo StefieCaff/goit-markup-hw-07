@@ -230,7 +230,7 @@ margin-right: 50px;
   margin-bottom:30px;
 }
 
-.button__hero{
+.button--hero{
   padding: 10px 20px;
 }
 
@@ -240,15 +240,15 @@ margin-right: 50px;
   display: flex;
 }
 
-.advantages-item:not(:last-child){
+.advantages__item:not(:last-child){
   margin-right: 30px;
 }
 
-.advantages-item{
+.advantages__item{
   width: 270px
 }
 
-.advantages-icons-wrapper{
+.advantages__wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,7 +260,7 @@ margin-right: 50px;
   
 }
 
-.advantages-heading{
+.advantages__heading{
   font-weight: 700;
   line-height: 16px;
   font-size: 14px;
@@ -269,7 +269,7 @@ margin-right: 50px;
   margin-bottom:10px;
 }
 
-.advantages-detail{
+.advantages__text{
     font-weight: 400;
     line-height: 24px;
     font-size: 14px;
@@ -279,29 +279,24 @@ margin-right: 50px;
 
 /* what we do section styling*/
 
-.we-do-container{
-  display:flex;
-  flex-direction: column;
-}
-
 .section-no-top-padding{
   padding-top: 0;
 }
 
-.we-do-list {
+.do__list {
   display:flex;
   justify-content: center;
 }
 
-.we-do-item:not(:last-child){
+.do__item:not(:last-child){
   margin-right: 30px;
 }
 
-.we-do-item{
+.do__item{
   position:relative;
 }
 
-.we-do-label{
+.do__label{
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -325,7 +320,6 @@ margin-right: 50px;
   flex-direction: column;
 }
 
-.section-heading-team,
 .team-list{
   display:flex;
   justify-content: center;
@@ -664,7 +658,7 @@ margin-right: 50px;
   fill: currentColor;
 }
 
-.button__subscription {
+.button--subscription {
   padding: 10px 0px;
   width: 200px;
   margin-left: 12px;
@@ -812,7 +806,7 @@ margin-right: 50px;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.button__modal{
+.button--modal{
   width: 200px;
   padding: 10px 80px;
   margin-left: 124px;
