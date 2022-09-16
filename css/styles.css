@@ -142,12 +142,12 @@ address {
 margin-right: 50px;
 }
 
-.navbar__list{
+.navbar-list{
   display:flex;
   margin-left: 97px;
 }
 
-.header-contacts__list{
+.header-contacts-list{
   display: flex;
 }
 
@@ -172,7 +172,7 @@ margin-right: 50px;
 }
 
 .header__icon{
-  fill:currentColor;
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -283,9 +283,8 @@ margin-right: 50px;
   padding-top: 0;
 }
 
-.do__list {
+.do-list {
   display:flex;
-  justify-content: center;
 }
 
 .do__item:not(:last-child){
@@ -317,8 +316,6 @@ margin-right: 50px;
 
 .team-list{
   display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .team__item:not(:last-child){
@@ -391,18 +388,16 @@ margin-right: 50px;
 }
 
 .socials__icon{
-  fill:currentColor;
+  fill: currentColor;
 }
 
 /*clients section styling*/
 
 .clients-list{
   display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.clients-link{
+.clients__link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,11 +411,11 @@ margin-right: 50px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item:not(:last-child){
+.clients__item:not(:last-child){
   margin-right: 30px;
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -871,8 +866,8 @@ color: var(--dark-accent-color);
 }
 
 
-.clients-linkfocus,
-.clients-link:hover {
+.clients__linkfocus,
+.clients__link:hover {
   border: 1px solid var(--dark-accent-color);
   color: var(--dark-accent-color);
 
