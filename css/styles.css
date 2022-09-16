@@ -103,9 +103,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-.hero-button, 
-.modal-button,
-.subscription-button{
+.button {
   font-family: Roboto, sans-serif;
   background-color: var(--dark-accent-color);
   color: var(--light-accent-color);
@@ -173,7 +171,7 @@ margin-right: 50px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-icon{
+.header__icon{
   fill:currentColor;
   margin-right: 10px;
 }
@@ -206,7 +204,7 @@ margin-right: 50px;
 
 /* hero section styles*/
 
-.hero-container{
+.hero__container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,7 +230,7 @@ margin-right: 50px;
   margin-bottom:30px;
 }
 
-.hero-button{
+.button__hero{
   padding: 10px 20px;
 }
 
@@ -666,15 +664,11 @@ margin-right: 50px;
   fill: currentColor;
 }
 
-.subscription-button {
+.button__subscription {
   padding: 10px 0px;
   width: 200px;
   margin-left: 12px;
   margin-top: 20px;
-  background-color: var(--dark-accent-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*modal styling*/
@@ -818,7 +812,7 @@ margin-right: 50px;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-button{
+.button__modal{
   width: 200px;
   padding: 10px 80px;
   margin-left: 124px;
@@ -891,12 +885,8 @@ margin-right: 50px;
 color: var(--dark-accent-color);
 }
 
-.hero-button:focus,
-.hero-button:hover,
-.modal-button:focus,
-.modal-button:hover,
-.subscription-button:focus,
-.subscription-button:hover{
+.button:focus,
+.button:hover {
   background-color: #188CE8;
 }
 
