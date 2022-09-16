@@ -129,43 +129,40 @@ address {
   border-bottom: 1px solid #ECECEC;
 }
 
-.nav-container{
+.container__nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar-list{
+.navbar{
   display: flex;
   align-items: center;
 }
 
-.navbar-item:not(:last-child){
+.navbar__item:not(:last-child){
 margin-right: 50px;
 }
 
-.navbar{
+.navbar__list{
   display:flex;
   margin-left: 97px;
 }
 
-.navbar-item{
-  align-items: center;
-}
-.nav-contacts{
+.header-contacts__list{
   display: flex;
 }
 
-.header-contact-item:not(:last-child) {
+.header-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contact-item,
-.navbar-item{
+.header-contact__item {
   display: block;
 }
 
-.navbar-contact-link{
+.navbar__link{
+  position: relative;
   padding: 32px 0 31px 0;
   font-weight: 500;
   font-size:14px;
@@ -181,18 +178,7 @@ margin-right: 50px;
   margin-right: 10px;
 }
 
-.navbar-item{
-  display:flex;
-} 
-
-.navbar-contact-link{
-  position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact-link{
+.header-contact__link{
   display:flex;
   align-items:center;
   color: var(--sub-color);
@@ -896,12 +882,12 @@ margin-right: 50px;
 /* hover/focus styling */
 
 .current-link,
-.navbar-contact-link:focus, 
-.header-contact-link:focus,
-.header-icon-link:focus,
-.navbar-contact-link:hover,
-.header-contact-link:hover,
-.header-icon-link:hover{
+.navbar__link:focus, 
+.header-contact__link:focus,
+.header-contact__link:focus,
+.navbar__link:hover,
+.header-contact__link:hover,
+.header-contact__link:hover{
 color: var(--dark-accent-color);
 }
 
