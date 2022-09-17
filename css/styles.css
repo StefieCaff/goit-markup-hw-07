@@ -3,6 +3,7 @@
 :focus{
   outline: none;
 }
+
 /* hero hover button color   #188CE8  */
 
 :root{
@@ -14,8 +15,9 @@
  --sub-background-color: #F5F4FA;
  --dark-accent-color: #2196F3;
  --light-accent-color:#FFFFFF;
- --custom-pointer: url("./images/icons.svg#icon-send-airplane"), pointer;
 }
+
+/* default styles*/
 
 body{
   font-family: Roboto, sans-serif;
@@ -23,11 +25,8 @@ body{
   font-size: 14px;
   color: var(--main-color);
   font-size: var(--main-font-size);
-  background-color: var(--main-background-color);
-  
+  background-color: var(--main-background-color); 
 }
-
-/* default styles*/
 
 h1,
 h2,
@@ -171,7 +170,7 @@ margin-right: 50px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__icon{
+.header-contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
