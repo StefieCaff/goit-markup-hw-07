@@ -431,7 +431,7 @@ margin-right: 50px;
   margin-right: 8px;
 }
 
-.filter-button{
+.button-secondary{
   font-family: Roboto, sans-serif;
   background-color: #F5F4FA;
   padding: 6px 26px;
@@ -465,13 +465,13 @@ margin-right: 50px;
   margin-top:-30px;
 }
   
-.project-item{
+.project__item{
     margin-left: 30px;
     margin-top: 30px;
     background: #FFFFFF;
 }
 
-.project-wrapper{
+.project__wrapper{
    display: flex;
    flex-direction: column;
    padding:20px 24px;
@@ -479,14 +479,14 @@ margin-right: 50px;
    border-top:none;
 }
 
-.project-heading{
+.project__header{
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
 }
 
-.project-filter{
+.project__filter{
   font-weight: 400;
   font-size: var(--sub-font-size);
   line-height: 30px;
@@ -494,14 +494,14 @@ margin-right: 50px;
   color: var(--sub-color);
 }
 
-.project-link {
+.project__link {
   display: block;
   transition-property: box-shadow,transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-description {
+.project-description__wrapper {
   position: relative;
   width: 370px;
   height: 294px;
@@ -511,7 +511,7 @@ margin-right: 50px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -872,26 +872,26 @@ color: var(--dark-accent-color);
 
 }
 
-.filter-button:focus,
-.filter-button:hover {
+.button-secondary:focus,
+.button-secondary:hover {
   background-color:var(--dark-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
   0px 1px 2px rgba(0, 0, 0, 0.08), 
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-link:focus,
-.project-link:hover {
+.project__link:focus,
+.project__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-description:hover .project-overlay {
+.project-description__wrapper:hover .project__overlay {
   transform: translateY(0px);
 }
 
-.project-link:focus .project-overlay {
+.project__link:focus .project__overlay {
   transform: translateY(0px);
 }
 
@@ -901,9 +901,9 @@ color: var(--dark-accent-color);
 }
 
 .footer-address-link:focus,
-.filter-button:focus,
+.button-secondary:focus,
 .footer-address-link:hover,
-.filter-button:hover{
+.button-secondary:hover{
   color: var(--light-accent-color);
 } 
 
