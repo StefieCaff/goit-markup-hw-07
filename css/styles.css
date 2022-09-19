@@ -22,7 +22,7 @@
 body{
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: $fontSize;
   color: var(--main-color);
   font-size: var(--main-font-size);
   background-color: var(--main-background-color); 
@@ -262,7 +262,7 @@ margin-right: 50px;
 .advantage__heading{
   font-weight: 700;
   line-height: 16px;
-  font-size: 14px;
+  font-size: $fontSize;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom:10px;
@@ -271,7 +271,7 @@ margin-right: 50px;
 .advantage__text{
     font-weight: 400;
     line-height: 24px;
-    font-size: 14px;
+    font-size: $fontSize;
     letter-spacing: 0.03em;
     color: var(--sub-color)
 }
@@ -296,7 +296,7 @@ margin-right: 50px;
 
 .do__label{
   font-weight: 700;
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -432,7 +432,7 @@ margin-right: 50px;
 
 .filter__button{
   font-family: Roboto, sans-serif;
-  background-color: #F5F4FA;
+  background-color: var(--sub-background-color);
   padding: 6px 26px;
   border: none;
   cursor: pointer;
@@ -561,7 +561,7 @@ margin-right: 50px;
 
 .footer-header{
   font-weight: 700;
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -620,7 +620,7 @@ margin-right: 50px;
 
 #footer-placeholder::placeholder{
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--sub-font-size);
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -721,7 +721,7 @@ margin-right: 50px;
   position: relative;
   margin-bottom:4px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: secondaryFontSize;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--sub-color);
@@ -743,7 +743,7 @@ margin-right: 50px;
   height: 40px;
   padding:12px 42px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: secondaryFontSize;
   line-height: 14px;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -773,7 +773,7 @@ margin-right: 50px;
 
 #textarea-placeholder::placeholder{
   font-weight: 400;
-  font-size: 12px;
+  font-size: secondaryFontSize;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -825,7 +825,7 @@ margin-right: 50px;
 .agree-check__text,
 .agree-check__link{
   font-weight: 400;
-  font-size: 14px;
+  font-size: $fontSize;
   line-height: 24px;
   letter-spacing: 0.03em;
   cursor: pointer;
