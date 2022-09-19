@@ -14,6 +14,12 @@
     transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border: 1px solid var(--dark-accent-color);
+      color: $brightAccentColor;
+        }
 }
 
 .clients__item:not(:last-child) {
@@ -22,10 +28,4 @@
 
 .clients__icon {
     fill: currentColor;
-}
-
-.clients__linkfocus,
-.clients__link:hover {
-    border: 1px solid var(--dark-accent-color);
-    color: var(--dark-accent-color);
 }

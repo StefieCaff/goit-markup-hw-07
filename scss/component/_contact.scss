@@ -18,20 +18,18 @@
 .header-contact__link {
     display: flex;
     align-items: center;
-    color: var(--sub-color);
+    color: $darkColor;
     padding: 32px 0 31px 0;
     font-weight: 500;
-    font-size: 14px;
+    font-size: $fontSize;
     line-height: 16px;
     letter-spacing: 0.02em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-contact__link:focus,
-.header-contact__link:focus,
-.header-contact__link:hover,
-.header-contact__link:hover {
-    color: var(--dark-accent-color);
+    &:focus,
+    &:hover {
+      color: $brightAccentColor;
+    }
 }

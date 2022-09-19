@@ -2,12 +2,12 @@
     font-family: Raleway, sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: var(--dark-accent-color);
+    color: $brightAccentColor;
     line-height: 31px;
     letter-spacing: 0.03em;
 }
 
-.logo--margin-display {
+.logo--footer {
     display: block;
     margin-bottom: 10px;
 }

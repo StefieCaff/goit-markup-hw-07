@@ -1,5 +1,5 @@
 .footer {
-    background-color: #2F303A;
+    background-color: $darkBackgroundColor;
     padding: 60px 0;
 }
 
@@ -9,14 +9,19 @@
 }
 
 .footer-address-link {
-    color: var(--sub-color);
+    color: $darkColor;
     font-weight: 400;
     line-height: 24px;
-    font-size: 14px;
+    font-size: $fontSize;
     letter-spacing: 0.03em;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      color: $lightColor;
+        }
 }
 
 .footer-wrapper {
@@ -25,15 +30,10 @@
 
 .footer-header {
     font-weight: 700;
-    font-size: 14px;
+    font-size: $fontSize;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-accent-color);
     margin-top: 15px;
-}
-
-.footer-address-link:focus,
-.footer-address-link:hover {
-    color: var(--light-accent-color);
 }

@@ -14,11 +14,17 @@
 }
 
 .social__link--fill-background {
-    background-color: var(--main-background-color);
-    color: var(--icon-color);
+    background-color: $primaryBackgroundColor;
+    color: $primaryRestingIconFill;
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background-color: $brightAccentColor;
+      color: $lightColor;
+    }
 }
 
 .social__item:not(:last-child) {
@@ -34,24 +40,18 @@
 }
 
 .social__link--background {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--light-accent-color);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $secondaryRestingIconFill;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $brightAccentColor;
+  }
 }
 
 .footer-social__item:not(:last-child) {
     margin-right: 10px;
-}
-
-.social__link--fill-background:focus,
-.social__link--fill-background:hover {
-    background-color: var(--dark-accent-color);
-    color: var(--light-accent-color)
-}
-
-.social__link--background:hover,
-.social__link--background:focus {
-    background-color: var(--dark-accent-color);
 }

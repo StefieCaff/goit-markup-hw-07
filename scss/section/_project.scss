@@ -8,7 +8,7 @@
 .project__item {
     margin-left: 30px;
     margin-top: 30px;
-    background: #FFFFFF;
+    background: $primaryBackgroundColor;
 }
 
 .project__wrapper {
@@ -28,10 +28,10 @@
 
 .project__filter {
     font-weight: 400;
-    font-size: var(--sub-font-size);
+    font-size: $secondaryFontSize;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: var(--sub-color);
+    color: $darkColor;
 }
 
 .project__link {
@@ -39,6 +39,13 @@
     transition-property: box-shadow, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .project-description__wrapper {
@@ -60,19 +67,12 @@
     line-height: 28px;
     letter-spacing: 0.03em;
     padding: 63px 24px 91px 24px;
-    color: var(--light-accent-color);
+    color: $lightColor;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(294px);
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project__link:focus,
-.project__link:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-description__wrapper:hover .project__overlay {

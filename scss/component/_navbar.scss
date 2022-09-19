@@ -28,6 +28,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: $brightAccentColor;
+    }
 }
 
 .current-link::after {
@@ -35,15 +40,13 @@
     display: inline-block;
     left: 0;
     bottom: -1px;
-    background-color: var(--dark-accent-color);
+    background-color: $brightAccentColor;
     content: "";
     width: 100%;
     height: 4px;
     border-radius: 2px;
 }
 
-.current-link,
-.navbar__link:focus,
-.navbar__link:hover {
-    color: var(--dark-accent-color);
-}
+ .current-link {
+    color: $brightAccentColor;
+ }

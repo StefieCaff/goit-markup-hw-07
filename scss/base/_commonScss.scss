@@ -1,0 +1,68 @@
+ :focus {
+    outline: none;
+} 
+
+/* hero hover button color   #188CE8  */
+
+// :root {
+//     --main-color: #212121;
+//     --sub-color: #757575;
+//     --icon-color: #AFB1B8;
+//     --main-font-size: 14px;
+//     --sub-font-size: 16px;
+//     --main-background-color: #FFFFFF;
+//     --sub-background-color: #F5F4FA;
+//     --dark-accent-color: #2196F3;
+//     --light-accent-color: #FFFFFF;
+// }
+
+/* default styles*/
+ 
+body {
+    font-family: Roboto, sans-serif;
+    font-style: $fontStyle;
+    color: $primaryColor;
+    font-size: $fontSize;
+    background-color: $primaryBackgroundColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+} 
+
+ html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+} 
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} 
+
+ address {
+    font-style: $fontStyle;
+}
+
+.link {
+    text-decoration: $noTextDeco;
+    color: inherit;
+}
+
+ .list {
+    list-style: $noListStyle;
+    padding: 0;
+    margin: 0;
+}

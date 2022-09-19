@@ -1,13 +1,13 @@
 .hero__container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero {
     padding: 200px 0;
-    background-color: #2F303A;
+    background-color: $darkBackgroundColor;
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero-img.jpg);
@@ -20,10 +20,6 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--light-accent-color);
+    color: $lightColor;
     margin-bottom: 30px;
-}
-
-.hero-button {
-    padding: 10px 20px;
 }

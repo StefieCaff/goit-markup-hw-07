@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css"/>
+
+        <link rel="stylesheet" href="./css/styles.css"/> 
+      
+        <!-- <link rel="stylesheet" href="./scss/main.css"/> -->
+
     <title>Effective Solutions for your Business</title>
 </head>
 
@@ -148,7 +152,7 @@
                       <h3 class="team__name">
                         Christopher Walker
                       </h3>
-                      <p class="team__title">
+                      <p class="team__description">
                         Product Designer
                       </p>
                       <ul class="list social">
@@ -190,7 +194,7 @@
                       <h3 class="team__name">
                         Kylie Evans
                       </h3>
-                      <p class="team__title">
+                      <p class="team__description">
                         Frontend Developer
                       </p>
                       <ul class="list social">
@@ -232,7 +236,7 @@
                       <h3 class="team__name">
                         Rayan Harris
                       </h3>
-                      <p class="team__title">
+                      <p class="team__description">
                         Marketing
                       </p>
                       <ul class="social list">
@@ -274,7 +278,7 @@
                       <h3 class="team__name">
                         Tyler Moore
                       </h3>
-                      <p class="team__title">
+                      <p class="team__description">
                          UI Designer
                       </p>
                       <ul class="social list">
@@ -366,7 +370,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div>
-        <a class="link logo logo--margin-display" href="index.html">WebStudio</a>
+        <a class="link logo logo--footer" href="index.html">WebStudio</a>
         <address class="address">
           <ul class="list">
             <li>
@@ -420,7 +424,7 @@
                 <label>
                 <input class="subscription__input" type="email" name="email" id="footer-placeholder" placeholder="E-mail" required/>  
                 </label>
-                <button class="button button--subscription" type="submit">Subscribe
+                <button class="button subscription-button" type="submit">Subscribe
                   <svg class="subscription__icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send-airplane"></use>
                 </svg>
@@ -432,14 +436,14 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="button-form-close" data-modal-close="">
+      <button type="button" class="modal__button-close" data-modal-close="">
         <svg width="12" height="10">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
       </button>
       <h3 class="modal__heading">Leave your information and we'll call you back</h3>
       
-      <form class="modal-form" action="#" method="POST" name="order-form" autocomplete="off">
+      <form class="form" action="#" method="POST" name="order-form" autocomplete="off">
         <div class="modal-wrapper">
           <label class="modal-wrapper__label">
             <span class="modal-wrapper__text">Name</span>
@@ -485,7 +489,7 @@
     </span>
     </label>
     </div>
-    <button class="button button--modal" type="submit">Send</button>
+    <button class="button form__button" type="submit">Send</button>
     </form>
   </div>
   </div>
